@@ -1,0 +1,53 @@
+.slider h3,
+.slider h5,
+.par_profil h3{
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+section{
+  padding: 50px 0px;
+}
+
+footer{
+  padding: 20px 0px;
+}
+
+.slider img,
+.parallax img{
+  filter:grayscale(0.5);
+  opacity: 0.7 !important;
+}
+
+.besar{
+  font-size: 20px;
+}
+
+.tombol{
+  padding: 0px 100px;
+}
+
+.bawah{
+  padding: 150px 0px;
+}
+
+.gesergambar{
+  padding: 50px 0px;
+}
+
+.tabs .tab a{
+          color: #000000;
+      } /*Black color to the text*/
+
+      .tabs .tab a:hover {
+          background-color:#eee;
+          color:#000;
+      } /*Text color on hover*/
+
+      .tabs .tab a.active {
+          background-color:#DDDDDD !important;
+          color:#000;
+      } /*Background and text color when a tab is active*/
+
+      .tabs .indicator {
+          background-color:#000;
+      } /*Color of underline*/
