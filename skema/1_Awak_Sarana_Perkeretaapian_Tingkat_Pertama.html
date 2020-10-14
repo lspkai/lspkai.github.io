@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+  <html lang="id">
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <!-- my CSS -->
+      <link rel="stylesheet" href="../css/style.css">
+
+      <!-- judul -->
+      <title>LSP KAI</title>
+
+      <!-- inline css -->
+      <style>
+       nav ul li a{
+         color: black;
+       }
+      </style>
+    </head>
+
+    <body>
+      <!-- navbar -->
+      <!-- link dikasih ID! -->
+        <div class="navbar-fixed">
+          <nav class="orange lighten-2 black-text">
+            <div class="container">
+            <div class="nav-wrapper">
+              <a href="../index.html" class="brand-logo black-text">LSP KAI</a>
+              <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="../profil.html">Profil</a></li>
+                <li><a href="../skemasertif.html">Skema Sertifikasi</a></li>
+                <li><a href="#">Informasi</a></li>
+                <li><a href="#">Berita</a></li>
+                <li><a href="../index.html#galeri">Galeri</a></li>
+                <li><a href="../index.html#kontak">Kontak</a></li>
+              </ul>
+            </div>
+           </div>
+          </nav>
+         </div>
+
+      <!-- link dikasih ID! -->
+      <!-- sidenav -->
+      <ul class="sidenav" id="mobile-nav">
+        <li><a href="../index.html">Beranda</a></li>
+        <li><a href="../profil.html">Profil</a></li>
+        <li><a href="../skemasertif.html">Skema Sertifikasi</a></li>
+        <li><a href="#">Informasi</a></li>
+        <li><a href="#">Berita</a></li>
+        <li><a href="../index.html#galeri">Galeri</a></li>
+        <li><a href="../index.html#kontak">Kontak</a></li>
+      </ul>
+
+      <!-- header -->
+      <section class="skemasertif grey lighten-2 scrollspy" id="judul_skemasertif">
+        <div class="container">
+          <h3>Skema Sertifikasi</h3>
+          <h5>LSP PT Kereta Api Indonesia (Persero)</h5>
+        </div>
+      </section>
+      
+      <!-- konten -->
+      <section>
+        <div class="container">
+          <h5><strong>Awak Sarana Perkeretaapian Tingkat Pertama</strong></h5>
+          <div class="row gesergambar">
+            <div class="col m9 s12">
+              <table class="highlight responsive-table">
+                <thead>
+                  <tr>
+                      <th>Kode Unit</th>
+                      <th>Judul Unit Kompetensi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>KAI.OO.001.00</td>
+                    <td>Menerapkan Peraturan Perundang-undangan Serta Standar Keselamatan dan Kesehatan Kerja di tempat kerja</td>
+                  </tr>
+                  <tr>
+                    <td>KAI.OP.001.00</td>
+                    <td>Melakukan Kegiatan Langsir</td>
+                  </tr>
+                  <tr>
+                    <td>KAI.OP.002.00</td>
+                    <td>Mengoperasikan Sarana Kereta Api</td>
+                  </tr>
+                  <tr>
+                    <td>KAI.OP.012.00</td>
+                    <td>Mengoperasikan Sarana Kereta Api saat Kondisi Tidak Normal</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col m2 s12">
+              <h6><strong>Unduh Panduan</strong></h6>
+              <a class="tomboldownload waves-effect waves-light btn orange lighten-2 black-text" href="bidang_operasi/1_Awak_Sarana_Perkeretaapian_Tingkat_Pertama.pdf" target="_blank">Download</a>
+              <div class="geserbiaya">
+                <h6><strong>Biaya</strong></h6>
+                <div class="kotakbiaya"><strong>Rp604.600</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="orange lighten-2 black-text center" id="kontak">
+        <div class="container left-align">
+          <div class="row">
+            <div class="col m5 s12">
+              <h4>Kontak</h4>
+              <ul class="besar">
+                <li>Jl. Laswi No.23, Bandung</li>
+                <li>16815</li>
+                <li>lsp.kai@kai.id</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="../js/materialize.min.js"></script>
+      <script>
+        const sideNav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sideNav);
+      </script>
+    </body>
+  </html>
