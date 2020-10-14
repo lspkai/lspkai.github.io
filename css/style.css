@@ -26,12 +26,30 @@ footer{
   padding: 0px 100px;
 }
 
+.tomboldownload{
+  padding: 0px 50px;
+}
+
 .bawah{
   padding: 150px 0px;
 }
 
 .gesergambar{
   padding: 50px 0px;
+}
+
+.geserbiaya{
+  padding: 30px 0px;
+}
+
+.kotakbiaya{
+  background-color: #7D8BD3;
+  width : 180px;
+  border: 1px solid #7D8BD3;
+  padding: 9px;
+  margin: 2px;
+  color: #101010;
+  text-align: center;
 }
 
 .tabs .tab a{
