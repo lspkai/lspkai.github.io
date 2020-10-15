@@ -1,71 +1,82 @@
 .slider h3,
 .slider h5,
-.par_profil h3{
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+.par_profil h3 {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-section{
+section {
   padding: 50px 0px;
 }
 
-footer{
+footer {
   padding: 20px 0px;
 }
 
 .slider img,
-.parallax img{
-  filter:grayscale(0.5);
+.parallax img {
+  filter: grayscale(0.5);
   opacity: 0.7 !important;
 }
 
-.besar{
+.besar {
   font-size: 20px;
 }
 
-.tombol{
+.tombol {
   padding: 0px 100px;
 }
 
-.tomboldownload{
+.tomboldownload {
   padding: 0px 50px;
 }
 
-.bawah{
+.bawah {
   padding: 150px 0px;
 }
 
-.gesergambar{
+.gesergambar {
   padding: 50px 0px;
 }
 
-.geserbiaya{
+.geserbiaya {
   padding: 30px 0px;
 }
 
-.kotakbiaya{
-  background-color: #7D8BD3;
-  width : 180px;
-  border: 1px solid #7D8BD3;
+.kotakbiaya {
+  background-color: #7d8bd3;
+  width: 180px;
+  border: 1px solid #7d8bd3;
   padding: 9px;
   margin: 2px;
   color: #101010;
   text-align: center;
 }
 
-.tabs .tab a{
-          color: #000000;
-      } /*Black color to the text*/
+.tabs .tab a {
+  color: #000000;
+} /*Black color to the text*/
 
-      .tabs .tab a:hover {
-          background-color:#eee;
-          color:#000;
-      } /*Text color on hover*/
+.tabs .tab a:hover {
+  background-color: #eee;
+  color: #000;
+} /*Text color on hover*/
 
-      .tabs .tab a.active {
-          background-color:#DDDDDD !important;
-          color:#000;
-      } /*Background and text color when a tab is active*/
+.tabs .tab a.active {
+  background-color: #dddddd !important;
+  color: #000;
+} /*Background and text color when a tab is active*/
 
-      .tabs .indicator {
-          background-color:#000;
-      } /*Color of underline*/
+.tabs .indicator {
+  background-color: #000;
+} /*Color of underline*/
+
+.linktanpawarna {
+  color: #000;
+  text-decoration: none;
+}
+
+.linktanpawarna:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
