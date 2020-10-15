@@ -71,12 +71,12 @@ footer {
 } /*Color of underline*/
 
 .linktanpawarna {
-  color: #000;
+  color: #000000;
   text-decoration: none;
 }
 
 .linktanpawarna:hover {
-  color: #000;
+  color: #000000;
   text-decoration: none;
   cursor: pointer;
 }
