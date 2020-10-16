@@ -52,6 +52,16 @@ footer {
   text-align: center;
 }
 
+.kotakdaftar {
+  background-color: #7d8bd3;
+  width: 180px;
+  border: 1px solid #7d8bd3;
+  padding: 9px;
+  margin: 2px;
+  color: #101010;
+  text-align: center;
+}
+
 .tabs .tab a {
   color: #000000;
 } /*Black color to the text*/
@@ -71,12 +81,17 @@ footer {
 } /*Color of underline*/
 
 .linktanpawarna {
-  color: #000000;
+  color: #000;
   text-decoration: none;
 }
 
 .linktanpawarna:hover {
-  color: #000000;
+  color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.dropdown-content {
+  width: max-content !important;
+  height: auto !important;
 }

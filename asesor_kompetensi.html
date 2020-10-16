@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+   <!--Import Google Icon Font-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!--Import materialize.css-->
+   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+   <!--Let browser know website is optimized for mobile-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <!-- my CSS -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <!-- judul -->
+   <title>Operasi</title>
+
+   <!-- inline css -->
+   <style>
+      nav ul li a {
+         color: black;
+      }
+   </style>
+</head>
+
+<body>
+   <!-- navbar -->
+   <!-- link dikasih ID! -->
+   <div class="navbar-fixed">
+      <nav class="orange lighten-2 black-text">
+         <div class="container">
+
+            <!-- konten dropdown -->
+            <ul id="dropdown" class="dropdown-content orange lighten-2">
+               <li><a class="black-text" href="#">Jadwal Kegiatan</a></li>
+               <li><a class="black-text" href="asesor_kompetensi.html">Asesor Kompetensi</a></li>
+               <li><a class="black-text" href="#">Tempat Uji Kompetensi (TUK)</a></li>
+               <li><a class="black-text" href="#">Pemegang Sertifikat</a></li>
+            </ul>
+
+            <!-- dropdown tapi di hp -->
+            <ul id="dropdown2" class="dropdown-content">
+               <li><a class="black-text" href="#">Jadwal Kegiatan</a></li>
+               <li><a class="black-text" href="asesor_kompetensi.html">Asesor Kompetensi</a></li>
+               <li><a class="black-text" href="#">Tempat Uji Kompetensi (TUK)</a></li>
+               <li><a class="black-text" href="#">Pemegang Sertifikat</a></li>
+            </ul>
+
+            <!-- navbar -->
+            <div class="nav-wrapper">
+               <a href="index.html" class="brand-logo black-text">LSP KAI</a>
+               <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+               <ul class="right hide-on-med-and-down">
+                  <li><a href="index.html">Beranda</a></li>
+                  <li><a href="profil.html">Profil</a></li>
+                  <li><a href="skemasertif.html">Sertifikasi</a></li>
+                  <li><a class="dropdown-trigger" data-target="dropdown">Informasi<i class="material-icons right">arrow_drop_down</i></a>
+                  </li>
+                  <li><a href="#">Berita</a></li>
+                  <li><a href="index.html#galeri">Galeri</a></li>
+                  <li><a href="index.html#kontak">Kontak</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </div>
+
+   <!-- sidenav -->
+   <ul class="sidenav" id="mobile-nav">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="profil.html">Profil</a></li>
+      <li><a href="skemasertif.html">Sertifikasi</a></li>
+      <li><a class="dropdown-trigger" data-target="dropdown2">Informasi<i class="material-icons right">arrow_drop_down</i></a>
+      </li>
+      <li><a href="#">Berita</a></li>
+      <li><a href="index.html#galeri">Galeri</a></li>
+      <li><a href="index.html#kontak">Kontak</a></li>
+   </ul>
+
+   <!-- header -->
+   <section class="skemasertif grey lighten-2 scrollspy" id="judul_skemasertif">
+      <div class="container">
+         <h3>Asesor Kompetensi</h3>
+         <h5>LSP PT Kereta Api Indonesia (Persero)</h5>
+      </div>
+   </section>
+
+   <!-- konten -->
+   <section>
+      <div class="container">
+         <div class="row">
+            <div class="col m8 s12">
+               <ul class="collection with-header">
+                  <li class="collection-item">
+                     <div>Daftar Asesor Kompetensi Bidang Operasi<a
+                           href="skema/bidang_operasi/daftar_asesor_operasi.html"
+                           class="secondary-content orange-text lighten-2"><i class="material-icons">send</i></a></div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer class="orange lighten-2 black-text center" id="kontak">
+      <div class="container left-align">
+         <div class="row">
+            <div class="col m5 s12">
+               <h4>Kontak</h4>
+               <ul class="besar">
+                  <li>Jl. Laswi No.23, Bandung</li>
+                  <li>16815</li>
+                  <li>lsp.kai@kai.id</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+
+   </footer>
+
+   <!--JavaScript at end of body for optimized loading-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="js/materialize.min.js"></script>
+   <script>
+      $(document).ready(function () {
+         $('.modal').modal();
+         $('.dropdown-trigger').dropdown({
+            coverTrigger: false
+         });
+      });
+   </script>
+   <script>
+      const sideNav = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(sideNav);
+   </script>
+</body>
+
+</html>
