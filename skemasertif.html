@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="css/style.css">
 
       <!-- judul -->
-      <title>Skema Sertifikasi</title>
+      <title>Sertifikasi</title>
 
       <!-- inline css -->
       <style>
@@ -29,14 +29,32 @@
         <div class="navbar-fixed">
           <nav class="orange lighten-2 black-text">
             <div class="container">
+
+            <!-- konten dropdown -->
+            <ul id="dropdown" class="dropdown-content orange lighten-2">
+              <li><a class="black-text" href="#">Jadwal Kegiatan</a></li>
+              <li><a class="black-text" href="asesor_kompetensi.html">Asesor Kompetensi</a></li>
+              <li><a class="black-text" href="#">Tempat Uji Kompetensi (TUK)</a></li>
+              <li><a class="black-text" href="#">Pemegang Sertifikat</a></li>
+            </ul>
+            
+            <!-- dropdown tapi di hp -->
+            <ul id="dropdown2" class="dropdown-content">
+              <li><a class="black-text" href="#">Jadwal Kegiatan</a></li>
+              <li><a class="black-text" href="asesor_kompetensi.html">Asesor Kompetensi</a></li>
+              <li><a class="black-text" href="#">Tempat Uji Kompetensi (TUK)</a></li>
+              <li><a class="black-text" href="#">Pemegang Sertifikat</a></li>
+            </ul>
+
+            <!-- navbar -->
             <div class="nav-wrapper">
               <a href="index.html" class="brand-logo black-text">LSP KAI</a>
               <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down">
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="profil.html">Profil</a></li>
-                <li><a href="#judul_skemasertif">Skema Sertifikasi</a></li>
-                <li><a href="#">Informasi</a></li>
+                <li><a href="#judul_skemasertif">Sertifikasi</a></li>
+                <li><a class="dropdown-trigger" data-target="dropdown">Informasi<i class="material-icons right">arrow_drop_down</i></a>
                 <li><a href="#">Berita</a></li>
                 <li><a href="index.html#galeri">Galeri</a></li>
                 <li><a href="index.html#kontak">Kontak</a></li>
@@ -51,8 +69,8 @@
       <ul class="sidenav" id="mobile-nav">
         <li><a href="index.html">Beranda</a></li>
         <li><a href="profil.html">Profil</a></li>
-        <li><a href="#judul_skemasertif">Skema Sertifikasi</a></li>
-        <li><a href="#">Informasi</a></li>
+        <li><a href="#judul_skemasertif">Sertifikasi</a></li>
+        <li><a class="dropdown-trigger" data-target="dropdown2">Informasi<i class="material-icons right">arrow_drop_down</i></a>
         <li><a href="#">Berita</a></li>
         <li><a href="index.html#galeri">Galeri</a></li>
         <li><a href="index.html#kontak">Kontak</a></li>
@@ -61,7 +79,7 @@
       <!-- header -->
       <section class="skemasertif grey scrollspy" id="judul_skemasertif">
         <div class="container">
-          <h3>Skema Sertifikasi</h3>
+          <h3>Sertifikasi</h3>
           <h5>LSP PT Kereta Api Indonesia (Persero)</h5>
         </div>
       </section>
@@ -70,8 +88,7 @@
       <section class="skemasertif grey lighten-2 scrollspy" id="skemasertif">
         <div class="container">
           <div class="row">
-            <h3 class="center light"><strong>Skema
-                  Sertifikasi</strong></h3>
+            <h3 class="center light"><strong>Sertifikasi</strong></h3>
             <div class="col m4 s12">
               <div class="card-panel center">
                 <a class="linktanpawarna" href="skema/operasi.html"><i class="medium material-icons">train</i></a>
@@ -122,8 +139,18 @@
           </div>
         </div>
       </footer>
+
       <!--JavaScript at end of body for optimized loading-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <script src="js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('.modal').modal();
+          $('.dropdown-trigger').dropdown({
+            coverTrigger: false
+          });
+        });
+      </script>
       <script>
         const sideNav = document.querySelectorAll('.sidenav');
         M.Sidenav.init(sideNav);

@@ -29,14 +29,32 @@
       <div class="navbar-fixed">
         <nav class="orange lighten-2 black-text">
           <div class="container">
+
+            <!-- konten dropdown -->
+            <ul id="dropdown" class="dropdown-content orange lighten-2">
+              <li><a class="black-text" href="#">Jadwal Kegiatan</a></li>
+              <li><a class="black-text" href="../../asesor_kompetensi.html">Asesor Kompetensi</a></li>
+              <li><a class="black-text" href="#">Tempat Uji Kompetensi (TUK)</a></li>
+              <li><a class="black-text" href="#">Pemegang Sertifikat</a></li>
+            </ul>
+            
+            <!-- dropdown tapi di hp -->
+            <ul id="dropdown2" class="dropdown-content">
+              <li><a class="black-text" href="#">Jadwal Kegiatan</a></li>
+              <li><a class="black-text" href="../../asesor_kompetensi.html">Asesor Kompetensi</a></li>
+              <li><a class="black-text" href="#">Tempat Uji Kompetensi (TUK)</a></li>
+              <li><a class="black-text" href="#">Pemegang Sertifikat</a></li>
+            </ul>
+
+            <!-- navbar -->
             <div class="nav-wrapper">
               <a href="../../index.html" class="brand-logo black-text">LSP KAI</a>
               <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down">
                 <li><a href="../../index.html">Beranda</a></li>
                 <li><a href="../../profil.html">Profil</a></li>
-                <li><a href="../../skemasertif.html">Skema Sertifikasi</a></li>
-                <li><a href="#">Informasi</a></li>
+                <li><a href="../../skemasertif.html">Sertifikasi</a></li>
+                <li><a class="dropdown-trigger" data-target="dropdown">Informasi<i class="material-icons right">arrow_drop_down</i></a>
                 <li><a href="#">Berita</a></li>
                 <li><a href="../../index.html#galeri">Galeri</a></li>
                 <li><a href="../../index.html#kontak">Kontak</a></li>
@@ -51,8 +69,8 @@
       <ul class="sidenav" id="mobile-nav">
         <li><a href="../../index.html">Beranda</a></li>
         <li><a href="../../profil.html">Profil</a></li>
-        <li><a href="../../skemasertif.html">Skema Sertifikasi</a></li>
-        <li><a href="#">Informasi</a></li>
+        <li><a href="../../skemasertif.html">Sertifikasi</a></li>
+        <li><a class="dropdown-trigger" data-target="dropdown2">Informasi<i class="material-icons right">arrow_drop_down</i></a>
         <li><a href="#">Berita</a></li>
         <li><a href="../../index.html#galeri">Galeri</a></li>
         <li><a href="../../index.html#kontak">Kontak</a></li>
@@ -61,7 +79,7 @@
       <!-- header -->
       <section class="skemasertif grey lighten-2 scrollspy" id="judul_skemasertif">
         <div class="container">
-          <h3>Skema Sertifikasi</h3>
+          <h3>Sertifikasi</h3>
           <h5>LSP PT Kereta Api Indonesia (Persero)</h5>
         </div>
       </section>
@@ -70,7 +88,8 @@
       <section>
         <div class="container">
           <h5><strong>Awak Sarana Perkeretaapian Tingkat Muda Sebagai Penyelia Masinis</strong></h5>
-          <div class="row gesergambar">
+          <br>
+          <div class="row">
             <div class="col m9 s12">
               <table class="highlight responsive-table">
                 <thead>
@@ -112,6 +131,34 @@
               </div>
             </div>
           </div>
+          <div class="row">
+            <br>
+            <h5><strong>Persayratan Dasar</strong></h5>
+            <ol>
+              <li>Pendidikan minimal SLTA.</li>
+              <li>Memiliki Sertifikat Awak Sarana Perkeretaapian Tingkat Pertama.</li>
+              <li>Pengalaman kerja telah bertugas sebagai Awak Sarana Perkeretaapian Tingkat Pertama selama paling sedikit 1
+                (satu) tahun atau 2000 (dua ribu) jam kerja yang dibuktikan dengan melampirkan buku catatan jam kerja (logbook).
+              </li>
+              <li>Lulus pendidikan dan Pelatihan teknis Awak Sarana Perkeretaapian Tingkat Muda sesuai dengan jenis sarana
+                Perkeretaapian berpenggerak yang dioperasikan.</li>
+              <li>Surat Tugas sebagai Penyelia dari Perusahaan</li>
+              <li>Sehat jasmani dan rohani.</li>
+              <li>Tidak buta warna.</li>
+              <li>Tinggi badan minimal 160 cm.</li>
+            </ol>
+            <div>
+              <br>
+              <h5><strong>Formulir Permohonan</strong></h5>
+              <br>
+              <a class="tomboldownload waves-effect waves-light btn indigo lighten-3 black-text"
+                href="formulir_permohonan/3_Mad_Instruktur/1. FR.APL.01 ASP MAD_INS(Jul_2020).pdf" target="_blank">FR.APL.01</a>
+              <br>
+              <br>
+              <a class="tomboldownload waves-effect waves-light btn indigo lighten-3 black-text"
+                href="formulir_permohonan/3_Mad_Instruktur/2. FR.APL.02 ASP MAD_PEN (Jul_2020).pdf" target="_blank">FR.APL.02</a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -129,8 +176,18 @@
           </div>
         </div>
       </footer>
+
       <!--JavaScript at end of body for optimized loading-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <script src="../../js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('.modal').modal();
+          $('.dropdown-trigger').dropdown({
+            coverTrigger: false
+          });
+        });
+      </script>
       <script>
         const sideNav = document.querySelectorAll('.sidenav');
         M.Sidenav.init(sideNav);
